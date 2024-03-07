@@ -1,0 +1,23 @@
+.tab-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+
+  font-size: 1rem;
+  color: inherit;
+  background-color: $color-solitude;
+  border: 1px solid $color-transparent;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color $trans-default;
+
+  @include hover {
+    background-color: $color-silver;
+  }
+}
+
+.active-tab {
+  background-color: $color-silver;
+  pointer-events: none;
+}
