@@ -7,7 +7,7 @@ function Footer() {
     <footer className={footer}>
       <div className="container">
         <a
-          href="/assets/yusova-nadya-resume.pdf"
+          href="https://nadyayusova.github.io/react-typescript-portfolio/assets/yusova-nadya-resume.pdf"
           download
         >
           Скачать резюме
