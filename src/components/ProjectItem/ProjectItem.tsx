@@ -1,12 +1,11 @@
-import { ElementType, HTMLAttributes, ReactNode } from 'react';
+import { ComponentPropsWithoutRef, ElementType } from 'react';
 
-interface ProjectItemProps extends HTMLAttributes<HTMLOrSVGElement> {
-  children: ReactNode;
-  otherProps?: HTMLAttributes<HTMLElement>[];
-  as?: ElementType;
-}
+type ProjectItemProps<T extends ElementType> = {
+  as?: T;
+} & ComponentPropsWithoutRef<T>;
 
-function ProjectItem({ as: Tag = 'div', children, ...otherProps }: ProjectItemProps) {
+function ProjectItem<T extends ElementType>({ as, children, ...otherProps }: ProjectItemProps<T>) {
+  const Tag = as || 'div';
   return <Tag {...otherProps}>{children}</Tag>;
 }
 
