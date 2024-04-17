@@ -11,23 +11,16 @@
   gap: 15px;
 }
 
-.applicant-name {
-  min-width: 40%;
+.application-title {
   margin: 0;
-  font-size: 1.6rem;
-
-  @include vp-1023 {
-    font-size: 1.4rem;
-  }
+  font-size: 3rem;
+  font-weight: normal;
 }
 
-.position-name {
-  font-size: 1.3rem;
-  font-weight: normal;
-
-  @include vp-1023 {
-    font-size: 1.2rem;
-  }
+.applicant-name {
+  min-width: 40%;
+  margin: 0 0 5px;
+  font-size: 1.2rem;
 }
 
 .contact {

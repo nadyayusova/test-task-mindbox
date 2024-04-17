@@ -11,6 +11,6 @@ export default defineConfig({
       },
     },
   },
-  base: 'react-typescript-portfolio',
+  base: 'test-task-mindbox',
   plugins: [react()],
 });

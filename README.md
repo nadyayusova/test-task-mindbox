@@ -1,4 +1,4 @@
-## Смотреть портфолио: https://nadyayusova.github.io/react-typescript-portfolio/
+## Смотреть демо: https://nadyayusova.github.io/test-task-mindbox/
 
 ---
 

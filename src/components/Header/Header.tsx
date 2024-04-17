@@ -1,12 +1,12 @@
 import CopyButton from '../Buttons/CopyButton/CopyButton';
 import styles from './Header.module.scss';
 
-function Header() {
+const Header: React.FC = () => {
   const {
     header,
     wrapper,
+    'application-title': applicationTitle,
     'applicant-name': applicantName,
-    'position-name': positionName,
     contact,
     'contact-link': contactLink,
   } = styles;
@@ -15,12 +15,9 @@ function Header() {
     <header className={header}>
       <div className="container">
         <div className={wrapper}>
-          <h1 className={applicantName}>
-            Юсова Надежда
-            <br />
-            <span className={positionName}>Frontend-разработчик</span>
-          </h1>
+          <h1 className={applicationTitle}>todos</h1>
           <div>
+            <p className={applicantName}>Юсова Надежда</p>
             <div className={contact}>
               <CopyButton copyText="https://t.me/nadyayusova" />
               <a
@@ -58,6 +55,6 @@ function Header() {
       </div>
     </header>
   );
-}
+};
 
 export default Header;

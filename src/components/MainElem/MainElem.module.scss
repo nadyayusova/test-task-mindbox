@@ -7,3 +7,70 @@
   flex-wrap: wrap;
   gap: 20px;
 }
+
+.list-type {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+
+  font-size: 1rem;
+  color: inherit;
+  background-color: $color-solitude;
+  border: 1px solid $color-transparent;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color $trans-default;
+
+  @include hover {
+    background-color: $color-silver;
+  }
+}
+
+.radio:checked + .list-type {
+  background-color: $color-silver;
+  pointer-events: none;
+}
+
+.radio:focus + .list-type {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+
+.todo-input {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  padding: 30px 0 0;
+
+  input {
+    width: 100%;
+    padding: 3px 10px;
+  }
+}
+
+.todo-add-btn {
+  flex-shrink: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 20px 5px;
+
+  font-size: 1rem;
+  color: inherit;
+  background-color: $color-solitude;
+  border: 1px solid $color-transparent;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color $trans-default;
+
+  @include hover {
+    background-color: $color-silver;
+  }
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding-top: 30px;
+}
