@@ -15,10 +15,12 @@ const TodoItem: React.FC<ITodoItem> = (props) => {
     <li className={todoItem}>
       <input
         type="checkbox"
+        id={`id-${id}`}
+        name={`${id}`}
         checked={completed}
         onChange={() => toggleTodo(id)}
       />
-      {title}
+      <label htmlFor={`id-${id}`}>{title}</label>
       <button
         className={removeBtn}
         type="button"

@@ -2,15 +2,26 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  width: 100%;
   margin-bottom: 8px;
 
   input {
+    flex-shrink: 0;
+
     width: 20px;
     height: 20px;
+  }
+
+  label {
+    flex-shrink: 1;
+    overflow-wrap: break-word;
+    max-width: calc(100% - 60px);
   }
 }
 
 .remove-btn {
+  flex-shrink: 0;
+
   display: flex;
   justify-content: center;
   align-items: center;
